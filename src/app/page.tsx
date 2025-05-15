@@ -59,7 +59,7 @@ export default function Home() {
       <div className="container mx-auto py-8 px-4">
         <header className="mb-8 text-center">
           <h1 className="text-3xl font-bold mb-2 text-gray-800">出席管理システム</h1> {/* 出席统计系统 -> 出席管理システム, 调整颜色 */}
-          <p className="text-gray-700">リアルタイムで出席状況を追跡</p> {/* 实时跟踪人员出席情况 -> リアルタイムで出席状況を追跡, 调整颜色 */}
+          
         </header>
 
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">

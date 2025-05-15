@@ -28,7 +28,7 @@ export default function AddAttendeeForm({ onAddSuccess }: AddAttendeeFormProps) 
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col space-y-4 w-full max-w-md">
-      <h3 className="text-lg font-medium">エントリーなしを追加</h3>
+      <h3 className="text-lg font-medium text-gray-900">エントリーなしを追加</h3>
       <div className="flex space-x-2">
         <input
           type="text"
@@ -44,7 +44,7 @@ export default function AddAttendeeForm({ onAddSuccess }: AddAttendeeFormProps) 
           className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 flex items-center"
         >
           <FaUserPlus className="mr-2" />
-          添加
+          追加
         </button>
       </div>
     </form>
