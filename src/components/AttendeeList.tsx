@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Attendee, updateAttendeeStatus } from '@/lib/supabase';
-import { FaCheck, FaTimes, FaUserAlt } from 'react-icons/fa';
+
 
 type AttendeeListProps = {
   attendees: Attendee[];
