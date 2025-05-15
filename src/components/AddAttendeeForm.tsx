@@ -28,13 +28,13 @@ export default function AddAttendeeForm({ onAddSuccess }: AddAttendeeFormProps) 
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col space-y-4 w-full max-w-md">
-      <h3 className="text-lg font-medium">添加未注册人员</h3>
+      <h3 className="text-lg font-medium">エントリーなしを追加</h3>
       <div className="flex space-x-2">
         <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="输入人员姓名"
+          placeholder="氏名"
           className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           disabled={isSubmitting}
         />
