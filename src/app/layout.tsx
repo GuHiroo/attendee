@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "出席统计系统",
-  description: "实时跟踪人员出席情况",
+  title: "BBQ出席管理",
+  description: "HOUSEIBBQの出席管理",
 };
 
 export default function RootLayout({
