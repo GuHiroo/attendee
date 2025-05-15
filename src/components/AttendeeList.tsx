@@ -24,6 +24,10 @@ export default function AttendeeList({ attendees, title, emptyMessage, onStatusC
     }
   };
 
+  if (attendees.length === 0) {
+    return <p className="text-center text-gray-600 py-4">{emptyMessage}</p>; // 调整颜色
+  }
+
   return (
     <div className="w-full">
       <h2 className="text-xl font-bold mb-4">{title}</h2>
@@ -40,7 +44,7 @@ export default function AttendeeList({ attendees, title, emptyMessage, onStatusC
                 <FaUserAlt className="mr-3 text-gray-400" />
                 <span>{attendee.name}</span>
                 {!attendee.is_registered && (
-                  <span className="ml-2 px-2 py-1 text-xs bg-yellow-200 text-yellow-800 rounded-full">未注册</span>
+                  <span className="ml-2 px-2 py-1 text-xs bg-yellow-200 text-yellow-800 rounded-full">エントリーなし</span>
                 )}
               </div>
               <button

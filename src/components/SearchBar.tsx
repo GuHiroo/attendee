@@ -10,7 +10,7 @@ type SearchBarProps = {
   placeholder?: string;
 };
 
-export default function SearchBar({ attendees, onSelectAttendee, placeholder = '搜索人员...' }: SearchBarProps) {
+export default function SearchBar({ attendees, onSelectAttendee, placeholder = '検索...' }: SearchBarProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredAttendees, setFilteredAttendees] = useState<Attendee[]>([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -56,7 +56,7 @@ export default function SearchBar({ attendees, onSelectAttendee, placeholder = '
                 setIsDropdownOpen(false);
               }}
             >
-              {attendee.name} {attendee.is_present ? '(已出席)' : '(未出席)'}
+              {attendee.name} {attendee.is_present ? '(出席済)' : '(未出席)'}
             </li>
           ))}
         </ul>
