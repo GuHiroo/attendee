@@ -58,7 +58,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto py-8 px-4">
         <header className="mb-8 text-center">
-          <h1 className="text-3xl font-bold mb-2 text-gray-800">出席管理システム</h1> {/* 出席统计系统 -> 出席管理システム, 调整颜色 */}
+          <h1 className="text-3xl font-bold mb-2 text-gray-800">BBQ出席管理</h1> {/* 出席统计系统 -> 出席管理システム, 调整颜色 */}
           
         </header>
 
